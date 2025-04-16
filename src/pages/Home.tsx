@@ -1,27 +1,93 @@
+
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ChevronRight, Wrench, Award, Truck, CheckCircle, ArrowRight } from "lucide-react";
+import { ChevronRight, Wrench, Award, Truck, CheckCircle, ArrowRight, FileText } from "lucide-react";
+import { 
+  Carousel, 
+  CarouselContent, 
+  CarouselItem, 
+  CarouselNext, 
+  CarouselPrevious 
+} from "@/components/ui/carousel";
+import { useEffect, useState } from "react";
+
+// Array of slider images with descriptions
+const sliderImages = [
+  {
+    url: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&q=80",
+    title: "Mining Equipment",
+    description: "Premium equipment for mining operations"
+  },
+  {
+    url: "https://images.unsplash.com/photo-1566731855990-0dae4943368a?auto=format&fit=crop&q=80", 
+    title: "Industrial Pumps",
+    description: "High-performance pumps for demanding environments"
+  },
+  {
+    url: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&q=80",
+    title: "Construction Machinery",
+    description: "Reliable machinery for construction projects"
+  },
+  {
+    url: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&q=80",
+    title: "Repair Services",
+    description: "Expert maintenance and repair solutions"
+  }
+];
+
 export default function Home() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  // Auto-advance slider
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % sliderImages.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
   return <>
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-stone-900 to-stone-800 py-20 sm:py-32">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&q=80')] bg-cover bg-center mix-blend-overlay opacity-20"></div>
-        <div className="container mx-auto px-4 md:px-6 lg:px-8 relative z-10">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              Leading Supplier of Mining & Industrial Equipment
-            </h1>
-            <p className="text-lg sm:text-xl text-stone-200 mb-8">
-              Providing premium equipment, expert services, and reliable solutions for mining and construction industries in DRC and Zambia.
+      {/* Hero Image Slider */}
+      <section className="relative">
+        <Carousel className="w-full">
+          <CarouselContent>
+            {sliderImages.map((image, index) => (
+              <CarouselItem key={index}>
+                <div className="relative h-[60vh] w-full">
+                  <div className="absolute inset-0 bg-gradient-to-r from-stone-900/70 to-stone-800/50 z-10"></div>
+                  <img 
+                    src={image.url} 
+                    alt={image.title} 
+                    className="h-full w-full object-cover"
+                  />
+                  <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white z-20 px-4 md:px-6 lg:px-8">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2">{image.title}</h2>
+                    <p className="text-lg sm:text-xl text-stone-200 max-w-2xl">{image.description}</p>
+                  </div>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="left-4 z-30" />
+          <CarouselNext className="right-4 z-30" />
+        </Carousel>
+      </section>
+      
+      {/* Welcome Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 md:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl sm:text-4xl font-bold text-stone-900 mb-6">
+              Welcome to Greenrock Minerals
+            </h2>
+            <p className="text-lg text-stone-600 mb-8 leading-relaxed">
+              Greenrock Minerals Limited is the first choice for mining and industrial clients in Central Africa. 
+              We supply, repair, and maintain pumps, hydraulic systems, heavy machinery, and industrial equipment 
+              tailored for demanding operations.
             </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Button asChild size="lg" className="bg-greenrock-600 hover:bg-greenrock-700">
-                <Link to="/products">Explore Products</Link>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="text-white border-white hover:bg-white/10">
-                <Link to="/contact" className="flex items-center">
-                  Contact Us <ChevronRight className="ml-2 h-4 w-4" />
-                </Link>
+            <div className="flex justify-center">
+              <Button asChild className="bg-greenrock-600 hover:bg-greenrock-700">
+                <Link to="/products">Explore Our Products</Link>
               </Button>
             </div>
           </div>

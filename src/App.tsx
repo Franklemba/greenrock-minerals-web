@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -9,6 +10,7 @@ import About from "./pages/About";
 import Products from "./pages/Products";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
+import Downloads from "./pages/Downloads";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ui/ScrollToTop";
 
@@ -28,6 +30,7 @@ const App = () => (
             <Route path="/products" element={<Products />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/downloads" element={<Downloads />} />
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
