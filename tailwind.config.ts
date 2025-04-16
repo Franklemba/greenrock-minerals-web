@@ -52,6 +52,33 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+        // Custom colors for Greenrock Minerals
+        greenrock: {
+          50: '#f0f9f1',
+          100: '#dcf0de',
+          200: '#bde0c0',
+          300: '#92c798',
+          400: '#65a96e',
+          500: '#488a51', // Primary brand green
+          600: '#376f40',
+          700: '#2d5934',
+          800: '#27472c',
+          900: '#213d26',
+          950: '#0f2113',
+        },
+        stone: {
+          50: '#f8f8f8',
+          100: '#f0f0f0',
+          200: '#e4e4e4',
+          300: '#d1d1d1',
+          400: '#b4b4b4',
+          500: '#9a9a9a',
+          600: '#818181',
+          700: '#6a6a6a',
+          800: '#5a5a5a',
+          900: '#4e4e4e',
+          950: '#282828',
+        },
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
