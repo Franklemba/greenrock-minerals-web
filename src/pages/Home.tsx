@@ -1,11 +1,8 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ChevronRight, Wrench, Award, Truck, CheckCircle, ArrowRight } from "lucide-react";
-
 export default function Home() {
-  return (
-    <>
+  return <>
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-stone-900 to-stone-800 py-20 sm:py-32">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&q=80')] bg-cover bg-center mix-blend-overlay opacity-20"></div>
@@ -98,18 +95,10 @@ export default function Home() {
                 Our deep understanding of the mining industry in Central Africa allows us to provide solutions that are perfectly tailored to local conditions and requirements.
               </p>
               <ul className="space-y-4">
-                {[
-                  "Industry-leading equipment from trusted manufacturers",
-                  "Local presence with international standards",
-                  "Comprehensive after-sales support and maintenance",
-                  "Technical expertise and industry knowledge",
-                  "Fast delivery and reliable service"
-                ].map((item, index) => (
-                  <li key={index} className="flex items-start gap-3">
+                {["Industry-leading equipment from trusted manufacturers", "Local presence with international standards", "Comprehensive after-sales support and maintenance", "Technical expertise and industry knowledge", "Fast delivery and reliable service"].map((item, index) => <li key={index} className="flex items-start gap-3">
                     <CheckCircle className="h-6 w-6 text-greenrock-600 flex-shrink-0 mt-0.5" />
                     <span className="text-stone-700">{item}</span>
-                  </li>
-                ))}
+                  </li>)}
               </ul>
               <div className="mt-8">
                 <Button asChild className="bg-greenrock-600 hover:bg-greenrock-700">
@@ -118,12 +107,8 @@ export default function Home() {
               </div>
             </div>
             <div className="relative hidden md:block">
-              <div className="absolute -inset-4 bg-greenrock-500/10 rounded-2xl -rotate-6"></div>
-              <img 
-                src="https://images.unsplash.com/photo-1505466607503-0930dcd2b938?auto=format&fit=crop&q=80" 
-                alt="Mining equipment" 
-                className="rounded-lg shadow-lg relative"
-              />
+              <div className="absolute -inset-4 rounded-2xl -rotate-6 bg-green-400"></div>
+              <img alt="Mining equipment" className="rounded-lg shadow-lg relative" src="/lovable-uploads/f7f86160-158a-4703-bffe-f48de89c5309.png" />
             </div>
           </div>
         </div>
@@ -143,6 +128,5 @@ export default function Home() {
           </Button>
         </div>
       </section>
-    </>
-  );
+    </>;
 }
