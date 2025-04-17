@@ -54,6 +54,11 @@ export default function Footer() {
                   Contact Us
                 </Link>
               </li>
+              <li>
+                <Link to="/downloads" className="text-stone-300 hover:text-greenrock-400 transition-colors">
+                  Docs
+                </Link>
+              </li>
             </ul>
           </div>
 

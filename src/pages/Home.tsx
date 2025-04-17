@@ -14,17 +14,17 @@ import { useEffect, useState } from "react";
 // Array of slider images with descriptions
 const sliderImages = [
   {
-    url: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&q=80",
+    url: "/lovable-uploads/miningEquipment.png",
     title: "Mining Equipment",
     description: "Premium equipment for mining operations"
   },
   {
-    url: "https://images.unsplash.com/photo-1566731855990-0dae4943368a?auto=format&fit=crop&q=80", 
+    url: "/lovable-uploads/Picture13.png", 
     title: "Industrial Pumps",
     description: "High-performance pumps for demanding environments"
   },
   {
-    url: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&q=80",
+    url: "/lovable-uploads/Picture.png",
     title: "Construction Machinery",
     description: "Reliable machinery for construction projects"
   },

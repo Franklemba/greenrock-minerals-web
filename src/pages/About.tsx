@@ -5,8 +5,8 @@ export default function About() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-stone-900 py-16 sm:py-24">
-        <div className="container mx-auto px-4 md:px-6 lg:px-8">
+      <section className="relative">
+        {/* <div className="container mx-auto px-4 md:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
               About Greenrock Minerals
@@ -15,7 +15,28 @@ export default function About() {
               A leading supplier of mining and industrial equipment in Central Africa with a focus on quality, reliability, and exceptional service.
             </p>
           </div>
+        </div> */}
+
+
+        <div className="relative h-[60vh] w-full">
+                  <div className="absolute inset-0 bg-gradient-to-r from-stone-900/70 to-stone-800/50 z-10"></div>
+                  <img 
+                    src="/lovable-uploads/about00.png" 
+                    alt="Industrial Pumps" 
+                    className="h-full w-full object-cover"
+                  />
+                  <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white z-20 px-4 md:px-6 lg:px-8">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2">
+                    About Greenrock Minerals
+                    </h2>
+                    <p className="text-lg sm:text-xl text-stone-200 max-w-2xl">
+                      
+              A leading supplier of mining and industrial equipment in Central Africa with a focus on quality, reliability, and exceptional service.
+
+                    </p>
+                  </div>
         </div>
+
       </section>
 
       {/* Company Overview */}
@@ -39,7 +60,7 @@ export default function About() {
             <div className="relative">
               <div className="grid grid-cols-2 gap-4">
                 <img 
-                  src="https://images.unsplash.com/photo-1588462707351-97469bed0806?auto=format&fit=crop&q=80" 
+                  src="/lovable-uploads/about32.png" 
                   alt="Mining equipment" 
                   className="rounded-lg shadow-md"
                 />
@@ -49,12 +70,12 @@ export default function About() {
                   className="rounded-lg shadow-md mt-8"
                 />
                 <img 
-                  src="https://images.unsplash.com/photo-1536825211030-094de935f680?auto=format&fit=crop&q=80" 
+                  src="/lovable-uploads/Picture09.png" 
                   alt="Mine site" 
                   className="rounded-lg shadow-md"
                 />
                 <img 
-                  src="https://images.unsplash.com/photo-1573587790094-68ae0cf8fcfb?auto=format&fit=crop&q=80" 
+                  src="/lovable-uploads/Picture01.png" 
                   alt="Mining equipment" 
                   className="rounded-lg shadow-md mt-8"
                 />
@@ -197,8 +218,9 @@ export default function About() {
               <div key={index} className="bg-white p-6 rounded-lg shadow-md border border-stone-100">
                 <div className="h-48 bg-stone-200 rounded-lg mb-4 flex items-center justify-center">
                   <Users className="h-16 w-16 text-stone-400" />
+                
                 </div>
-                <h3 className="text-xl font-bold text-stone-900 mb-1">{person.name}</h3>
+                <h3 className="text-xl font-bold text-stone-900 mb-1 personName" >{person.name}</h3>
                 <p className="text-greenrock-600 font-medium mb-3">{person.position}</p>
                 <p className="text-stone-600">{person.bio}</p>
               </div>

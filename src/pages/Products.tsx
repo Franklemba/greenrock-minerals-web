@@ -106,6 +106,17 @@ export default function Products() {
     }
   ];
 
+  const brandLogos = [
+    "/lovable-uploads/logo01.jpg",
+    "/lovable-uploads/logo02.jpg",
+    "/lovable-uploads/logo03.jpg",
+    "/lovable-uploads/logo04.png",
+    "/lovable-uploads/logo05.png",
+   "/lovable-uploads/logo01.jpg",
+    "/lovable-uploads/logo02.jpg",
+    "/lovable-uploads/logo03.jpg",
+  ];
+
   return (
     <>
       {/* Hero Section */}
@@ -219,11 +230,12 @@ export default function Products() {
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
-            {[...Array(8)].map((_, index) => (
-              <div key={index} className="h-24 bg-stone-100 rounded-lg flex items-center justify-center">
-                <div className="text-stone-400 font-bold">Brand Logo</div>
-              </div>
-            ))}
+               {brandLogos.map((logo, index) => (
+              <div key={index} className="h-14 bg-stone-100 rounded-lg flex items-center justify-center">
+              <img src={logo} alt={`Brand ${index + 1}`} className="h-12" /> 
+              {/* <div className="text-stone-400 font-bold">{logo}</div> */}
+            </div>
+          ))}
           </div>
         </div>
       </section>
