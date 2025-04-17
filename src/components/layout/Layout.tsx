@@ -12,7 +12,7 @@ export default function Layout() {
         <Outlet />
       </main>
       <Footer />
-      <WhatsAppButton phoneNumber="260123456789" />
+      <WhatsAppButton phoneNumber="260966555566" />
     </div>
   );
 }
