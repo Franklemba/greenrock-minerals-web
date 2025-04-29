@@ -241,32 +241,44 @@ export default function Contact() {
 
       {/* Map Section */}
       <section className="py-16 sm:py-24 bg-stone-50">
-        <div className="container mx-auto px-4 md:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl font-bold text-stone-900 mb-4">
-              Our Locations
-            </h2>
-            <p className="text-lg text-stone-600">
-              Visit our offices in Zambia and DRC to explore our equipment and speak with our experts.
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="rounded-lg overflow-hidden shadow-md h-[400px] bg-stone-200 flex items-center justify-center">
-              <div className="text-stone-600 text-center">
-                <p className="font-bold text-lg mb-2">Kitwe, Zambia</p>
-                <p>Google Map will be embedded here</p>
-              </div>
-            </div>
-            <div className="rounded-lg overflow-hidden shadow-md h-[400px] bg-stone-200 flex items-center justify-center">
-              <div className="text-stone-600 text-center">
-                <p className="font-bold text-lg mb-2">Lubumbashi, DRC</p>
-                <p>Google Map will be embedded here</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+  <div className="container mx-auto px-4 md:px-6 lg:px-8">
+    <div className="text-center max-w-3xl mx-auto mb-16">
+      <h2 className="text-3xl font-bold text-stone-900 mb-4">
+        Our Locations
+      </h2>
+      <p className="text-lg text-stone-600">
+        Visit our offices in Zambia and DRC to explore our equipment and speak with our experts.
+      </p>
+    </div>
+
+    <div className="grid md:grid-cols-2 gap-8">
+      <div className="rounded-lg overflow-hidden shadow-md h-[400px] bg-stone-200">
+        <iframe
+          title="Kitwe Location"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15694.682716911014!2d28.195902356938122!3d-12.82364028463703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x196c1b4ec31d6c47%3A0x741e6883b01aeef2!2sKitwe!5e0!3m2!1sen!2szm!4v1714389683034!5m2!1sen!2szm"
+          width="100%"
+          height="100%"
+          style={{ border: 0 }}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <div className="rounded-lg overflow-hidden shadow-md h-[400px] bg-stone-200">
+        <iframe
+          title="Lubumbashi Location"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63763.947829402215!2d27.441226705745008!3d-11.668217238473425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19464e76efaff5f5%3A0x8e01d33b2bb85e4f!2sLubumbashi!5e0!3m2!1sen!2szm!4v1714389794393!5m2!1sen!2szm"
+          width="100%"
+          height="100%"
+          style={{ border: 0 }}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
     </>
   );
 }

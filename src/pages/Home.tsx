@@ -32,6 +32,16 @@ const sliderImages = [
     url: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&q=80",
     title: "Repair Services",
     description: "Expert maintenance and repair solutions"
+  },
+  {
+    url: "/lovable-uploads/galleryConstruction.jpg",
+    title: "Construction Services",
+    description: "Superior quality construction services"
+  },
+  {
+    url: "/lovable-uploads/PicturePipes.jpg",
+    title: "HDPE pipes supply",
+    description: "High-quality HDPE pipes ideal for water"
   }
 ];
 

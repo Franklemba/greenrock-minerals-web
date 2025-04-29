@@ -159,17 +159,24 @@ export default function Products() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-stone-900 py-16 sm:py-24">
-        <div className="container mx-auto px-4 md:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-              Products & Services
-            </h1>
-            <p className="text-lg text-stone-300">
-              Comprehensive equipment solutions for mining, industrial, and construction applications.
-            </p>
-          </div>
+      <section className="relative h-[60vh] w-full">
+      <div className="relative h-[60vh] w-full">
+                  <div className="absolute inset-0 bg-gradient-to-r from-stone-900/70 to-stone-800/50 z-10"></div>
+                  <img 
+                    src="/lovable-uploads/galleryConstructionServ.jpg" 
+                    alt="Industrial Pumps" 
+                    className="h-full w-full object-cover"
+                  />
+                  <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white z-20 px-4 md:px-6 lg:px-8">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2">
+                    Products & Services
+                    </h2>
+                    <p className="text-lg sm:text-xl text-stone-200 max-w-2xl">
+                    Comprehensive equipment solutions for mining, industrial, and construction applications.
+                    </p>
+                  </div>
         </div>
+
       </section>
 
       {/* Product Categories */}

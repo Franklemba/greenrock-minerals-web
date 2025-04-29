@@ -6,18 +6,6 @@ export default function About() {
     <>
       {/* Hero Section */}
       <section className="relative">
-        {/* <div className="container mx-auto px-4 md:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-              About Greenrock Minerals
-            </h1>
-            <p className="text-lg text-stone-300">
-              A leading supplier of mining and industrial equipment in Central Africa with a focus on quality, reliability, and exceptional service.
-            </p>
-          </div>
-        </div> */}
-
-
         <div className="relative h-[60vh] w-full">
                   <div className="absolute inset-0 bg-gradient-to-r from-stone-900/70 to-stone-800/50 z-10"></div>
                   <img 
