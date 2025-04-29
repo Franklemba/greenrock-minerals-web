@@ -10,7 +10,7 @@ export default function Products() {
       id: "pumps",
       title: "Pumps & Fluid Handling",
       description: "High-performance pumps for mining, dewatering, and industrial processes.",
-      image: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&q=80",
+      image: "/lovable-uploads/PicturePump.png",
       features: [
         "Submersible pumps for mine dewatering",
         "Slurry pumps for mineral processing",
@@ -23,7 +23,7 @@ export default function Products() {
       id: "polyurethane",
       title: "Polyurethane Components",
       description: "Custom polyurethane components designed for extreme wear resistance in mining applications.",
-      image: "https://images.unsplash.com/photo-1595079572308-2418198d4930?auto=format&fit=crop&q=80",
+      image: "/lovable-uploads/PicturePoly.png",
       features: [
         "Screen panels and sieve bends",
         "Hydrocyclone liners",
@@ -36,7 +36,7 @@ export default function Products() {
       id: "conveyor",
       title: "Conveyor Systems",
       description: "Complete conveyor solutions for efficient material handling in mining and industrial applications.",
-      image: "https://images.unsplash.com/photo-1504477271656-e0bbe9f6b493?auto=format&fit=crop&q=80",
+      image: "/lovable-uploads/PictureConveyor.png",
       features: [
         "Conveyor belts and components",
         "Idlers and pulleys",
@@ -49,7 +49,7 @@ export default function Products() {
       id: "hydraulic",
       title: "Hydraulic & Pneumatic Systems",
       description: "Power transmission solutions for heavy machinery and industrial applications.",
-      image: "https://images.unsplash.com/photo-1617781699596-3c9ada89711f?auto=format&fit=crop&q=80",
+      image: "/lovable-uploads/PictureHydraulics.png",
       features: [
         "Hydraulic pumps and motors",
         "Cylinders and actuators",
@@ -62,7 +62,7 @@ export default function Products() {
       id: "construction",
       title: "Construction Machinery",
       description: "Heavy equipment for construction and mining operations.",
-      image: "https://images.unsplash.com/photo-1573548842355-73bb50e50323?auto=format&fit=crop&q=80",
+      image: "/lovable-uploads/PictureConstruction.png",
       features: [
         "Loaders and excavators",
         "Cranes and lifting equipment",
@@ -75,13 +75,52 @@ export default function Products() {
       id: "acid",
       title: "Acid-Proofing Services",
       description: "Specialized protective coatings and linings for harsh chemical environments.",
-      image: "https://images.unsplash.com/photo-1505562130589-9879683e72da?auto=format&fit=crop&q=80",
+      image: "/lovable-uploads/PictureAcid.png",
       features: [
         "Acid-resistant coatings",
         "Chemical-resistant linings",
         "Tank and vessel protection",
         "Concrete protection systems",
         "Pipe and equipment coatings"
+      ]
+    },
+    {
+      id: "constructionService",
+      title: "Construction Services",
+      description: "Providing superior quality construction services to clients for over 5years.",
+      image: "/lovable-uploads/PictureCivil.png" ,
+      features: [
+        "New Constructional Projects",
+        "Renovations & Tenants Up-fits",
+        "Road Construction",
+        "Heavy Civil Construction",
+        "Design-build and Design-bid-build"
+      ]
+    },
+    {
+      id: "hdpe",
+      title: "HDPE pipes supply",
+      description: "We supply high-quality HDPE pipes ideal for water, sewage, and industrial applications.",
+      image: "/lovable-uploads/PicturePipes.jpg" ,
+      features: [
+        "Light-weight and Flexible",
+        "Leak-Free Joints",
+        "Environmentally Friendly",
+        "UV and Weather Resistance",
+        "Cost Effective"
+      ]
+    },
+    {
+      id: "millball",
+      title: "Mill Ball supply",
+      description: "We supply high-quality mill balls designed for grinding operations in mining and industrial processes.",
+      image: "/lovable-uploads/PictureMillBall.jpg",
+      features: [
+        "Superior Wear Resistance",
+        "Available in various sizes",
+        "Customized Solutions",
+        "Corrosion Resistance",
+        "High Impact Toughness"
       ]
     }
   ];
