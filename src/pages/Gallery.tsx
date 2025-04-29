@@ -6,61 +6,61 @@ import { X } from "lucide-react";
 const galleryImages = [
   {
     id: 1,
-    src: "https://images.unsplash.com/photo-1505562130589-9879683e72da?auto=format&fit=crop&q=80",
+    src: "/lovable-uploads/PicturePump.png",
     category: "Equipment",
     title: "Industrial Pumping System"
   },
   {
     id: 2,
-    src: "https://images.unsplash.com/photo-1504477271656-e0bbe9f6b493?auto=format&fit=crop&q=80",
+    src: "/lovable-uploads/PictureConveyor.png",
     category: "Installation",
     title: "Conveyor System Setup"
   },
   {
     id: 3,
-    src: "https://images.unsplash.com/photo-1573548842355-73bb50e50323?auto=format&fit=crop&q=80",
+    src: "/lovable-uploads/Picture06.png",
     category: "Equipment",
     title: "Heavy Construction Machinery"
   },
   {
     id: 4,
-    src: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&q=80",
+    src: "/lovable-uploads/Picture.png",
     category: "Mining",
     title: "Underground Mining Operations"
   },
   {
     id: 5,
-    src: "https://images.unsplash.com/photo-1573587790094-68ae0cf8fcfb?auto=format&fit=crop&q=80",
+    src: "/lovable-uploads/Picture07.png",
     category: "Equipment",
     title: "Excavation Equipment"
   },
   {
     id: 6,
-    src: "https://images.unsplash.com/photo-1536825211030-094de935f680?auto=format&fit=crop&q=80",
+    src: "/lovable-uploads/Picture07.png",
     category: "Operations",
     title: "Open Pit Mining"
   },
   {
     id: 7,
-    src: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&q=80",
+    src: "/lovable-uploads/PicturePipes.png",
     category: "Facility",
     title: "Processing Plant"
   },
   {
     id: 8,
-    src: "https://images.unsplash.com/photo-1588462707351-97469bed0806?auto=format&fit=crop&q=80",
+    src: "/lovable-uploads/PictureHydraulics.png",
     category: "Equipment",
     title: "Hydraulic Systems"
   },
   {
     id: 9,
-    src: "https://images.unsplash.com/photo-1617781699596-3c9ada89711f?auto=format&fit=crop&q=80",
+    src: "/lovable-uploads/PictureConstruction.png",
     category: "Maintenance",
     title: "Equipment Servicing"
   },
   {
     id: 10,
-    src: "https://images.unsplash.com/photo-1595079572308-2418198d4930?auto=format&fit=crop&q=80",
+    src: "/lovable-uploads/PicturePoly.png",
     category: "Components",
     title: "Polyurethane Parts"
   },
@@ -105,17 +105,26 @@ export default function Gallery() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-stone-900 py-16 sm:py-24">
-        <div className="container mx-auto px-4 md:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-              Gallery
-            </h1>
-            <p className="text-lg text-stone-300">
-              Explore our equipment, installations, and operations in action.
-            </p>
-          </div>
+      <section className="relative">
+      
+        <div className="relative h-[60vh] w-full">
+                  <div className="absolute inset-0 bg-gradient-to-r from-stone-900/70 to-stone-800/50 z-10"></div>
+                  <img 
+                    src="/lovable-uploads/gallery.jpg" 
+                    alt="Industrial Gallery" 
+                    className="h-full w-full object-cover"
+                  />
+                  <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white z-20 px-4 md:px-6 lg:px-8">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2">
+                    Gallery
+                    </h2>
+                    <p className="text-lg sm:text-xl text-stone-200 max-w-2xl">
+                    Explore our equipment, installations, and operations in action.
+           
+                    </p>
+                  </div>
         </div>
+
       </section>
 
       {/* Gallery Section */}
