@@ -30,7 +30,7 @@ const galleryImages = [
   },
   {
     id: 5,
-    src: "/lovable-uploads/Picture07.png",
+    src: "/lovable-uploads/PictureCivil.png",
     category: "Equipment",
     title: "Excavation Equipment"
   },
@@ -42,7 +42,7 @@ const galleryImages = [
   },
   {
     id: 7,
-    src: "/lovable-uploads/PicturePipes.png",
+    src: "/lovable-uploads/sitePreparation.jpg",
     category: "Facility",
     title: "Processing Plant"
   },
@@ -66,13 +66,13 @@ const galleryImages = [
   },
   {
     id: 11,
-    src: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&q=80",
+    src: "/lovable-uploads/PicturePumpInstal.png",
     category: "Installation",
     title: "Pump Installation"
   },
   {
     id: 12,
-    src: "https://images.unsplash.com/photo-1505466607503-0930dcd2b938?auto=format&fit=crop&q=80",
+    src: "/lovable-uploads/sitePreparation.jpg",
     category: "Site",
     title: "Mining Site Preparation"
   },
